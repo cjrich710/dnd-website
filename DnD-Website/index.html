@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Campaign</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>D&D Campaign</h1>
+        <nav>
+            <ul>
+                <li><a href="#gold-rewards">Gold Rewards</a></li>
+                <li><a href="#gold-penalty">Gold Penalty</a></li>
+                <li><a href="#quest-rewards">Quest Rewards</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Gold Rewards Section -->
+        <section id="gold-rewards">
+            <h2 onclick="toggleSection('gold-rewards-table')">Chart of Determining Gold Rewards (Click to Toggle)</h2>
+            <div id="gold-rewards-table" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Quest Rank</th>
+                            <th>Base Reward Range</th>
+                            <th>Performance (Excellent)</th>
+                            <th>Resources Spent (Significant)</th>
+                            <th>Role-Playing (Good)</th>
+                            <th>Final Reward Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>D-Rank</td>
+                            <td>50-100 gp</td>
+                            <td>+20 gp</td>
+                            <td>+10 gp</td>
+                            <td>+10 gp</td>
+                            <td>90 gp</td>
+                        </tr>
+                        <tr>
+                            <td>C-Rank</td>
+                            <td>100-200 gp</td>
+                            <td>+40 gp</td>
+                            <td>+20 gp</td>
+                            <td>+20 gp</td>
+                            <td>180 gp</td>
+                        </tr>
+                        <tr>
+                            <td>B-Rank</td>
+                            <td>200-500 gp</td>
+                            <td>+80 gp</td>
+                            <td>+40 gp</td>
+                            <td>+40 gp</td>
+                            <td>460 gp</td>
+                        </tr>
+                        <tr>
+                            <td>A-Rank</td>
+                            <td>500-1000 gp</td>
+                            <td>+160 gp</td>
+                            <td>+80 gp</td>
+                            <td>+80 gp</td>
+                            <td>920 gp</td>
+                        </tr>
+                        <tr>
+                            <td>S-Rank</td>
+                            <td>1000-2000 gp</td>
+                            <td>+320 gp</td>
+                            <td>+160 gp</td>
+                            <td>+160 gp</td>
+                            <td>1840 gp</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Gold Penalty Section -->
+        <section id="gold-penalty">
+            <h2 onclick="toggleSection('gold-penalty-table')">Gold Penalty Chart (Click to Toggle)</h2>
+            <div id="gold-penalty-table" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number of Short Rests Taken</th>
+                            <th>Penalty to Gold Reward</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>Full Reward</td></tr>
+                        <tr><td>1</td><td>-5 gp</td></tr>
+                        <tr><td>2</td><td>-10 gp</td></tr>
+                        <tr><td>3</td><td>-15 gp</td></tr>
+                        <tr><td>4</td><td>-20 gp</td></tr>
+                        <tr><td>5</td><td>-25 gp</td></tr>
+                        <tr><td>6</td><td>-30 gp</td></tr>
+                        <tr><td>7</td><td>-35 gp</td></tr>
+                        <tr><td>8</td><td>-40 gp</td></tr>
+                        <tr><td>9</td><td>-45 gp</td></tr>
+                        <tr><td>10</td><td>-50 gp</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Quest Rewards Section -->
+        <section id="quest-rewards">
+            <h2 onclick="toggleSection('quest-rewards-table')">Detailed Quest Rewards and Requirements (Click to Toggle)</h2>
+            <div id="quest-rewards-table" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Quest Rank</th>
+                            <th>Gold Reward</th>
+                            <th>Points from Quest</th>
+                            <th>Points Needed to Rank Up</th>
+                            <th>Minimum Party Size</th>
+                            <th>Soloable by Rank</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>D-Rank (1-4)</td>
+                            <td>50-100 gp</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>C or higher</td>
+                        </tr>
+                        <tr>
+                            <td>C-Rank (5-8)</td>
+                            <td>100-200 gp</td>
+                            <td>25</td>
+                            <td>100</td>
+                            <td>2</td>
+                            <td>B or higher</td>
+                        </tr>
+                        <tr>
+                            <td>B-Rank (9-12)</td>
+                            <td>200-500 gp</td>
+                            <td>50</td>
+                            <td>250</td>
+                            <td>3</td>
+                            <td>A or higher</td>
+                        </tr>
+                        <tr>
+                            <td>A-Rank (13-16)</td>
+                            <td>500-1000 gp</td>
+                            <td>100</td>
+                            <td>500</td>
+                            <td>4</td>
+                            <td>S</td>
+                        </tr>
+                        <tr>
+                            <td>S-Rank (17-20)</td>
+                            <td>1000-2000 gp</td>
+                            <td>200</td>
+                            <td>1000</td>
+                            <td>5</td>
+                            <td>None</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2 onclick="toggleSection('services-table')">Services (Click to Toggle)</h2>
+            <div id="services-table" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Coach Cab - Between Towns (34)</td>
+                            <td>1 gp/mile (3 cp/mile)</td>
+                        </tr>
+                        <tr>
+                            <td>Coach Cab - Within a City (100)</td>
+                            <td>1 gp (1 cp)</td>
+                        </tr>
+                        <tr>
+                            <td>Hireling - Skilled</td>
+                            <td>2 gp/day</td>
+                        </tr>
+                        <tr>
+                            <td>Hireling - Unskilled (5)</td>
+                            <td>1 gp/day (2 sp/day)</td>
+                        </tr>
+                        <tr>
+                            <td>Messenger (50)</td>
+                            <td>1 gp/mile (2 cp/mile)</td>
+                        </tr>
+                        <tr>
+                            <td>First Level Spell</td>
+                            <td>10-30 gp + components</td>
+                        </tr>
+                        <tr>
+                            <td>Second Level Spell</td>
+                            <td>30-50 gp + components</td>
+                        </tr>
+                        <tr>
+                            <td>Third+ Level Spell</td>
+                            <td>Negotiable, possibly an errand or quest</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 D&D Campaign</p>
+    </footer>
+</body>
+</html>
